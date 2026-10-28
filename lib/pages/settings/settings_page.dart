@@ -68,6 +68,12 @@ const List<_SettingsGroup> _settingsGroups = [
         icon: Icons.downloading_rounded,
         path: '/settings/download-settings',
       ),
+      _SettingsCategory(
+        label: '站点登录',
+        description: '登录需要账号的站点',
+        icon: Icons.login_rounded,
+        path: '/settings/login',
+      ),
     ],
   ),
   _SettingsGroup(
