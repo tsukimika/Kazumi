@@ -11,8 +11,8 @@ import 'package:kazumi/pages/settings/displaymode_settings.dart';
 import 'package:kazumi/pages/settings/download_settings.dart';
 import 'package:kazumi/pages/settings/interface_settings.dart';
 import 'package:kazumi/pages/settings/keyboard_settings.dart';
-import 'package:kazumi/pages/settings/player_settings.dart';
 import 'package:kazumi/pages/settings/login_webview_page.dart';
+import 'package:kazumi/pages/settings/player_settings.dart';
 import 'package:kazumi/pages/settings/proxy/proxy_module.dart';
 import 'package:kazumi/pages/settings/renderer_settings.dart';
 import 'package:kazumi/pages/settings/settings_page.dart';
@@ -87,9 +87,11 @@ final settingsModule = createModule(
           ..route(
             '/download-settings',
             child: (context, state) => const DownloadSettingsPage(),
+          )
+          ..route(
+            '/login',
+            child: (context, state) => const LoginWebviewPage(),
           );
-               ..route('/login',
-           child: (context, state) => const LoginWebviewPage()),
       },
     );
     c
